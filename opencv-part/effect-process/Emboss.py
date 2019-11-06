@@ -6,7 +6,7 @@ imgInfo = img.shape
 height = imgInfo[0]
 width = imgInfo[1]
 cv2.imshow('src',img)
-gray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 # newP = gray0 - gray1 + 150
 dst = np.zeros((height,width,1),np.uint8)
 for i in range(0,height):

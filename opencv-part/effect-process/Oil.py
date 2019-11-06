@@ -6,7 +6,7 @@ cv2.imshow('src',img)
 imgInfo = img.shape
 height = imgInfo[0]
 width = imgInfo[1]
-gray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 dst = np.zeros((height,width,3),np.uint8)
 for i in range(4,height-4):
     for j in range(4,width-4):
